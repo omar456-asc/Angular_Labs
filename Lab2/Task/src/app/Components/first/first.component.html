@@ -1,0 +1,11 @@
+<style>
+  div{
+    margin-top: 100px;
+  margin-left: 630px;}
+</style>
+<div>
+<input type="text" value="{{name}}" placeholder="First Name" (input)="getValue($event)" />
+<p>Value: {{name}}</p>
+<input type="button" value="Reset" (click)="chg()"/>
+
+</div>
