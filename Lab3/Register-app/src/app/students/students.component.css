@@ -1,0 +1,20 @@
+/* Add some padding to the table */
+table {
+    padding: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Add some spacing between table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style the table header */
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}

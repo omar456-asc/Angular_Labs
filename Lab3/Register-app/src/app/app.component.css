@@ -1,0 +1,12 @@
+/* Set a max width for the main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add a background color and border radius to the container */
+.container {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+}

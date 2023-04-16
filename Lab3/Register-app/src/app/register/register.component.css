@@ -1,0 +1,50 @@
+/* Add some spacing between elements */
+label,
+input,
+button {
+    margin-bottom: 10px;
+}
+
+/* Show an error message */
+.error {
+    color: red;
+}
+/* Style the error message */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Style the button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* Style the input fields */
+input[type="text"],
+input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Change the border and background color on focus */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border: 2px solid #007bff;
+    background-color: #fff;
+}
+
+/* Style the button on hover */
+button:hover {
+    background-color: #0069d9;
+    cursor: pointer;
+}
