@@ -1,11 +1,33 @@
 <div>
   <label for="name">Name:</label>
   <input id="name" type="text" [(ngModel)]="name" />
-
+  [ngClass]="{'is-valid': name.length > 3,'is-invalid':name.length <= 3 &&
+  name}">
+  <div
+    style="text-align: center; color: red"
+    *ngIf="name.length <= 3 && name; else trueBlockName"
+  >
+    <p>Name length must be more than 3</p>
+  </div>
+  <ng-template #trueBlockName>
+    <div style="text-align: center; color: greenyellow" *ngIf="name">
+      <p>Name valid</p>
+    </div>
+  </ng-template>
   <label for="age">Age:</label>
   <input id="age" type="number" [(ngModel)]="age" />
+  <div
+    style="text-align: center; color: red"
+    *ngIf="+age > 40 || (+age < 20 && age); else trueBlock"
+  >
+    <p>Age Not Valid</p>
+  </div>
+  <ng-template #trueBlock>
+    <div style="text-align: center; color: greenyellow" *ngIf="age">
+      <p>Age Valid</p>
+    </div>
+  </ng-template>
 
   <button (click)="addStudent()">Add</button>
-
   <div *ngIf="errorMessage">{{ errorMessage }}</div>
 </div>

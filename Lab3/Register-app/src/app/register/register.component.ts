@@ -15,7 +15,6 @@ export class RegisterComponent {
       this.errorMessage = 'Name must be at least 3 characters long';
       return;
     }
-
     if (this.age < 20 || this.age > 40) {
       this.errorMessage = 'Age must be between 20 and 40';
       return;
