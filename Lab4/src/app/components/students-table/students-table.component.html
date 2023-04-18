@@ -1,0 +1,22 @@
+<table style="height: 30px" class="table container my-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of students; index as i">
+      <td>{{ s.name }}</td>
+      <td>{{ s.age }}</td>
+      <td>{{ s.email }}</td>
+      <td>
+        <a href="student/{{ i + 1 }}">
+          <button class="btn btn-primary">View Details</button>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

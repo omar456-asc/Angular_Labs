@@ -1,0 +1,41 @@
+<h2 class="text-center m-1">Form</h2>
+
+<div class="container w-50 mb-5 p-2">
+  <h3>Add New Student</h3>
+  <form (ngSubmit)="onSubmit()" #addStudentForm="ngForm">
+    <div class="form-group my-3">
+      <label for="name">Name : </label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        required
+        [(ngModel)]="name"
+        name="name"
+      />
+    </div>
+    <div class="form-group my-3">
+      <label for="age">Age : </label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        required
+        [(ngModel)]="age"
+        name="age"
+      />
+    </div>
+    <div class="form-group my-3">
+      <label for="email">Email address : </label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        required
+        [(ngModel)]="email"
+        name="email"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
